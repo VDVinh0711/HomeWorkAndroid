@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bk"
+    android:focusableInTouchMode="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/loginHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="Login"
+           />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputUser"
+            style="@style/parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:background="@drawable/border">
+
+            <EditText
+                android:id="@+id/editTextUser"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="@string/login_email_hint"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:layout_marginLeft="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputpass"
+            style="@style/parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:background="@drawable/border">
+
+            <EditText
+                android:id="@+id/editTextpass"
+                style="@style/modifiedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="@string/login_password_hint"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:layout_marginLeft="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Login"
+            android:textSize="17dp"
+            android:textColor="@color/whiteTextColor"
+            android:background="@drawable/login_button_bk"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+        <TextView
+            android:id="@+id/forgo_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:layout_marginRight="20dp"
+            android:textSize="10dp"
+            android:text="@string/login_signup_hint"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
