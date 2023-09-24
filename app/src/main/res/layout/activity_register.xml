@@ -160,4 +160,25 @@
 
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/loginViewsMargin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21115053120359"
+            android:textSize="20dp"
+            android:textColor="#FF0000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Võ Đăng Vịnh"
+            android:textSize="20dp"
+            android:textColor="#FF0000"/>
+
+    </LinearLayout>
+
 </RelativeLayout>
